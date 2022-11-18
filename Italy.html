@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,1,0" />
+    <link rel="stylesheet" href="./dist/output.css">
+    <title>Fork Full of Italy</title>
+</head>
+<body>
+    <header class="fixed flex top-0 w-full h-[75px] bg-header-grey border-b-2 border-off-white z-[1]">
+        <a href="./index.html"><h1 class="font-Bree italic mt-[15px] mr-[75px] ml-[55px] text-white text-4xl"><img class="h-5 invert absolute top-[26px] left-5"src="./assets/images/pngwing.com.png">Kachow Down Delivery</h1></a>
+        <a class="address font-Roboto text-[18px] mt-7 text-white hover:cursor-pointer">Address<span class="relative left-[5px] bottom-[6px]">&#8964;</span></a>
+        <button class="absolute right-[100px] top-5 h-[35px] w-[80px] bg-white rounded-[30px] border-none"><span class="material-symbols-outlined relative top-0.5">
+            shopping_cart
+            </span></button>
+    </header>
+
+    <section class="inline-block w-[80%] mt-[100px] mr-[10%] ml-[10%] relative justify-center items-center">
+        <img class="w-[80%] mr-[10%] ml-[10%] h-[650px] rounded-[18px] shadow-info-grey shadow-lg"src="https://ik.imagekit.io/wpr8ctmq9/Italian_Food/croppedshutterstock1829686103J2Y4jpg_245.jfif?ik-sdk-version=javascript-1.4.3&updatedAt=1668741082399">
+        <div class="inline-block relative top-[-118px] h-[100px] pt-[15px] pr-[15px] pl-[15px] bg-white rounded-xl ml-[11%] font-Roboto">
+            <h2 class="text-[200%] font-semibold relative top-[-4px]">Fork Full of Italy</h2>
+            <p class="font-bold text-info-grey relative left-[-5px]">Fork Full of Italy | 15.2 mi | $$$ | 4.94 <img class="w-3 h-3 absolute right-[-15px] bottom-[7px]" src="./assets/images/star-grey-th.png"></p>
+        </div>
+        <div class="inline-block relative h-[100px] top-[-118px] font-Roboto bg-white text-center pt-[10px] pr-[30px] pl-[30px] pb-[15px] ml-[5px] rounded-xl">
+            <h6 id="v-open-status" class="text-[200%] mb-[5px] font-semibold">Open</h6>
+            <p id="v-open-hours" class="font-bold text-info-grey">9am - 8pm</p>
+        </div>
+    </section>
+
+    <h3 id="top-ratings-header" class="relative top-[-70px] font-Bree text-[40px] ml-[14%] underline">Top Ratings</h3>
+    <section class="w-[80%] mx-[10%] flex justify-evenly relative top-[-50px] ">
+        <div class="w-[30%] h-[150px] border-info-grey border-2 rounded-xl p-[10px] font-Roboto overflow-hidden shadow-info-grey shadow-md">
+          <h5 class="text-[22px] font-Bree">Keanu R.</h5>
+          <h6 class="mb-[5px] text-[14px]"><span class="material-symbols-outlined">
+            grade
+            </span><span class="material-symbols-outlined">
+                grade
+                </span><span class="material-symbols-outlined">
+                    grade
+                    </span><span class="material-symbols-outlined">
+                        grade
+                        </span><span class="material-symbols-outlined">
+                            grade
+                            </span></h6>
+          <p>Italian food done right!</p>
+        </div>
+        <div class="w-[30%] h-[150px] border-info-grey border-2 rounded-xl p-[10px] font-Roboto overflow-hidden shadow-info-grey shadow-md">
+            <h5 class="text-[22px] font-Bree">Steve W.</h5>
+            <h6><span class="material-symbols-outlined">
+                grade
+                </span><span class="material-symbols-outlined">
+                    grade
+                    </span><span class="material-symbols-outlined">
+                        grade
+                        </span><span class="material-symbols-outlined">
+                            grade
+                            </span><span class="material-symbols-outlined">
+                                grade
+                                </span></h6>
+            <p>It really tastes like Italy!</p>
+        </div>
+        <div class="w-[30%] h-[150px] border-info-grey border-2 rounded-xl p-[10px] font-Roboto overflow-hidden shadow-info-grey shadow-md">
+            <h5 class="text-[22px] font-Bree">Freddie P.</h5>
+            <h6><span class="material-symbols-outlined">
+                grade
+                </span><span class="material-symbols-outlined">
+                    grade
+                    </span><span class="material-symbols-outlined">
+                        grade
+                        </span><span class="material-symbols-outlined">
+                            grade
+                            </span></h6>
+            <p>Best food I have had in a while!</p>
+        </div>
+    </section>
+
+    <section class="available-items">
+        <h3 class="relative top-[-30px] font-Bree text-[40px] ml-[14%] underline">Available Items</h3>
+        <article id="foods" class="flex flex-wrap justify-evenly mx-[10%] shrink">
+        <div class="w-[450px] h-[400px] mx-auto rounded-xl">
+            <img class="w-[450px] h-[300px] shadow-info-grey shadow-lg rounded-xl hover:cursor-pointer transition transform hover:scale-110" src="https://ik.imagekit.io/wpr8ctmq9/Italy/Good_Braciole.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668738773921">
+            <h4 class="text-[25px] relative top-4 left-2 font-Bree">Braciole</h4>
+            <p class="relative top-[10px] left-2 text-[20px]">$23.99</p>
+        </div>
+        <div class="w-[450px] h-[400px] mx-auto rounded-xl">
+            <img class="w-[450px] h-[300px] shadow-info-grey shadow-lg rounded-xl hover:cursor-pointer transition transform hover:scale-110 rotate-90" src="https://ik.imagekit.io/wpr8ctmq9/Italian_Food/images.jfif?ik-sdk-version=javascript-1.4.3&updatedAt=1668741876201">
+            <h4 class="text-[25px] relative top-4 left-2 font-Bree">Chicken Scallopine</h4>
+            <p class="relative top-[10px] left-2 text-[20px]">$27.99</p>
+        </div>
+        <div class="w-[450px] h-[400px] mx-auto rounded-xl">
+            <img class="w-[450px] h-[300px] shadow-info-grey shadow-lg rounded-xl hover:cursor-pointer transition transform hover:scale-110" src="https://ik.imagekit.io/wpr8ctmq9/Italian_Food/Screen_Shot_2022-05-05_at_6.26.34_PM.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668741081699">
+            <h4 class="text-[25px] relative top-4 left-2 font-Bree">Italian Casserole</h4>
+            <p class="relative top-[10px] left-2 text-[20px]">$24.99</p>
+        </div>
+        <div class="w-[450px] h-[400px] mx-auto rounded-xl">
+            <img class="w-[450px] h-[300px] shadow-info-grey shadow-lg rounded-xl hover:cursor-pointer transition transform hover:scale-110" src="https://ik.imagekit.io/wpr8ctmq9/Italy/Italian_Meatloaf.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668740032630">
+            <h4 class="text-[25px] relative top-4 left-2 font-Bree">Italian Meatloaf</h4>
+            <p class="relative top-[10px] left-2 text-[20px]">19.99</p>
+        </div>
+        <div class="w-[450px] h-[400px] mx-auto rounded-xl">
+            <img class="w-[450px] h-[300px] shadow-info-grey shadow-lg rounded-xl hover:cursor-pointer transition transform hover:scale-110" src="https://ik.imagekit.io/wpr8ctmq9/Italy/chicken_tetrazzini.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668740032038">
+            <h4 class="text-[25px] relative top-4 left-2 font-Bree">Chicken Tetrazzini</h4>
+            <p class="relative top-[10px] left-2 text-[20px]">$5 lb</p>
+        </div>
+        <div class="w-[450px] h-[400px] mx-auto rounded-xl">
+            <img class="w-[450px] h-[300px] shadow-info-grey shadow-lg rounded-xl hover:cursor-pointer transition transform hover:scale-110" src="https://ik.imagekit.io/wpr8ctmq9/Italian_Food/SAVJW_District_Gelato_Gelato-scaled.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668741082405">
+            <h4 class="text-[25px] relative top-4 left-2 font-Bree">Gelato</h4>
+            <p class="relative top-[10px] left-2 text-[20px]">$4 per scoop</p>
+        </div>
+    </article>
+    </section>
+    <footer class="absolute bottom-[-140%] text-center mt-[50px] h-52 font-Bree w-full bg-[#1f1d1d] text-5xl">
+        <h2 class="mt-[50px] text-white italic"><img class="relative h-[30px] invert left-[34%] top-[41px]" src="./assets/images/pngwing.com.png">Kachow Down Delivery</h2>
+    </footer>
+
+    
+</body>
+</html>
