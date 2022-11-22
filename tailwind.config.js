@@ -6,7 +6,9 @@ module.exports = {
     "./veggy.html",
     './signin.html',
     './italy.html',
-    './seafood.html'
+    './seafood.html',
+    './cart.html',
+    './main.html'
   ],
   theme: {
     fontFamily: {
