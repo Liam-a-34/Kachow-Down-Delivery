@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="w-full p-0 m-0">
+<html lang="en" class="h-full bg-gray-50">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,69 +11,58 @@
     <link rel="stylesheet" href="./dist/output.css">
     <title>Kachow Down Delivery</title>
 </head>
-<body class="w-full p-0 m-0">
-    <header>
-    <div class="">
-        <img class="h-screen w-full" src="https://ik.imagekit.io/liamallen34/Kachow_Images/shutterstock_1724611486.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668619841318">
+<body class="h-full">
+<div class="bg-[url(https://ik.imagekit.io/liamallen34/Kachow_Images/shutterstock_1724611486.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668619841318)] bg-cover bg-center h-full">
+    <div class="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8 ">
+        <div class="w-full max-w-md space-y-8 bg-white px-12 py-7 rounded-2xl ">
+          <div>
+            <img class="mx-auto h-12 w-auto" src="./assets/images/pngwing.com.png" alt="Your Company">
+            <h2 class="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">Please verify yourself</h2>
+            <p class="mt-2 text-center text-sm text-gray-600">
+              <a href="" class="font-medium text-gray-900 hover:text-gray-600">Please enter a valid email, and phone number</a>
+            </p>
+          </div>
+          <form class="mt-8 space-y-6" action="#" method="POST">
+            <input type="hidden" name="remember" value="true">
+            <div class="-space-y-px rounded-md shadow-sm">
+              <div>
+                <label for="email-address" class="sr-only">Email address</label>
+                <input id="email-address" name="email" type="email" autocomplete="email" required class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-gray-500 focus:outline-none focus:ring-indigo-500 sm:text-sm" placeholder="kachowdeliv@nomail.com">
+              </div>
+              <div>
+                <label for="password" class="sr-only">Password</label>
+                <input id="phone" name="phone" type="phone" autocomplete="phone" required class="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-gray-500 focus:outline-none focus:ring-indigo-500 sm:text-sm" placeholder="1+(123)-456-7890">
+              </div>
+            </div>
+      
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-gray-600 focus:ring-indigo-500">
+                <label for="remember-me" class="ml-2 block text-sm text-gray-900">Remember me</label>
+              </div>
+      
+              <div class="text-sm">
+                <a href="#" class="font-medium text-info-grey hover:info-grey">Forgot your email?</a>
+              </div>
+            </div>
+      
+            <div>
+              <button type="button" id="signInBtn" class="group relative flex w-full justify-center rounded-md border border-transparent bg-header-grey py-2 px-4 text-sm font-medium text-white hover:bg-info-grey focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-offset-2">
+                <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                  <!-- Heroicon name: mini/lock-closed -->
+                  <svg class="h-5 w-5 text-info-grey group-hover:text-header-grey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                Sign in
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-    <h1 class="font-Bree absolute w-1/3 left-1/3  top-1/3 text-7xl text-white text-center">
-        Fast food has never been faster
-    </h1>
-    <h2 class="absolute left-[37vw] top-[55%] text-white text-5xl font-Bree italic text-center"><img class="relative bottom-[-40px] left-[-40px] h-6 invert" src="./assets/images/pngwing.com.png">Kachow Down Delivery</h2>
-    </header>
-    <h2 class="pop text-5xl underline decoration-[3px] font-Bree ml-[10%] mt-[20px]">Popular Near You</h2>
-     <article class="flex flex-wrap absolute mt-[20px] px-[5%]">
-        <div class="w-[450px] h-[300px] mt-5 mx-auto">
-            <a href="./veggy.html" ><img src="https://ik.imagekit.io/liamallen34/Kachow_Images/shutterstock_598749548.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668619841046" class="w-full h-[250px] rounded-xl transition transform hover:scale-110 shadow-info-grey shadow-md"></a>
-            <h4 class="pb-1 pl-2.5 font-Roboto font-semibold text-[22px]">Vinny's Veggies</h4>
-            <p class="pl-2.5 font-Roboto text-info-grey font-semibold text-sm">10 mins | $0 delivery fee</p>
-        </div>
-        <div class="w-[450px] h-[300px] mt-5 mx-auto">
-            <a href="./southern.html"><img src="https://ik.imagekit.io/liamallen34/Kachow_Images/shutterstock_285533255.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668619841284" class="w-full h-[250px] rounded-xl transition transform hover:scale-110 shadow-info-grey shadow-md"></a>
-            <h4 class="pb-1 pl-2.5 font-Roboto font-semibold text-[22px]">Southern Delights</h4>
-            <p class="pl-2.5 font-Roboto text-info-grey font-semibold text-sm">12 mins | $0 delivery fee</p>
-        </div>
-        <div class="w-[450px] h-[300px] mt-5 mx-auto">
-            <a href="./pizza.html"><img src="https://ik.imagekit.io/liamallen34/Kachow_Images/shutterstock_225746563.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668619841033" class="w-full h-[250px] rounded-xl transition transform hover:scale-110 shadow-info-grey shadow-md"></a>
-            <h4 class="pb-1 pl-2.5 font-Roboto font-semibold text-[22px]">Papa Perry's Pizza</h4>
-            <p class="pl-2.5 font-Roboto text-info-grey font-semibold text-sm">8 mins | $0 delivery fee</p>
-        </div>
-        <div class="w-[450px] h-[300px] mt-5 mx-auto">
-            <a href="./seafood.html"><img src="https://ik.imagekit.io/liamallen34/Kachow_Images/shutterstock_1816011134.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668619839459" class="w-full h-[250px] rounded-xl transition transform hover:scale-110 shadow-info-grey shadow-md"></a>
-            <h4 class="pb-1 pl-2.5 font-Roboto font-semibold text-[22px]">Captain Cliffs Fresh Seafood</h4>
-            <p class="pl-2.5 font-Roboto text-info-grey font-semibold text-sm">21 mins | $0 delivery fee</p>
-        </div>
-        <div class="w-[450px] h-[300px] mt-5 mx-auto">
-            <a href="./burger.html"><img src="https://ik.imagekit.io/liamallen34/Kachow_Images/334701605-huge.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668620257069" class="w-full h-[250px] rounded-xl transition transform hover:scale-110 shadow-info-grey shadow-md"></a>
-            <h4 class="pb-1 pl-2.5 font-Roboto font-semibold text-[22px]">Bill's Burger Bar</h4>
-            <p class="pl-2.5 font-Roboto text-info-grey font-semibold text-sm">5 mins | $0 delivery fee</p>
-        </div>
-        <div class="w-[450px] h-[300px] mt-5 mx-auto">
-            <a href="./italy.html"><img src="https://ik.imagekit.io/liamallen34/Kachow_Images/shutterstock_1206985765.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668619838342" class="w-full h-[250px] rounded-xl transition transform hover:scale-110 shadow-info-grey shadow-md"></a>
-            <h4 class="pb-1 pl-2.5 font-Roboto font-semibold text-[22px]">Fork Full of Italy</h4>
-            <p class="pl-2.5 font-Roboto text-info-grey font-semibold text-sm">16 mins | $0 delivery fee</p>
-        </div>
-    <section class="flex flex-wrap justify-around grow mt-[150px] mr-[50px] mb-[200px] ml-[50px] text-center font-Roboto">
-        <div class="w-[250px] h-[300px] mb-[300px]">
-            <img src="./assets/images/pngwing.com (1).png">
-            <h3 class="text-[200%] font-semibold p-y-[20px]">Local Foods</h3>
-            <p class="text-[110%] font-semibold">From chains, and dives, to restaurants that drive. We deliver the best local options, straight to your door!</p>
-        </div>
-        <div class="w-[250px] h-[300px] mb-[300px]">
-            <img src="./assets/images/pngwing.com (2).png">
-            <h3 class="text-[200%] font-semibold p-y-[20px]">Fast Delivery</h3>
-            <p class="text-[110%] font-semibold">We deliver in 30 minutes or less, guaranteed! For faster delivery, contact your driver, and say the key words "Disobey All Traffic Laws". We can't guarantee your food will get there, but if it does, it'll be fast!</p>
-        </div>
-        <div class="w-[250px] h-[300px] mb-[300px]">
-            <img src="./assets/images/pngwing.com (4).png">
-            <h3 class="text-[200%] font-semibold p-yp[20px]">No Fees</h3>
-            <p class="text-[110%] font-semibold">None of those crazy delivery fees! We steal our money straight from the vendor! Not your wallet.</p>
-        </div>
-    </section>
-    <footer class="absolute left-0 mt-[100px] bottom-0 text-center mt-[50px] h-52 font-Bree w-full bg-[#1f1d1d] text-5xl">
-        <h2 class="absolute left-[37%] top-[35%] text-white italic"><img class="absolute left-[-50px] bottom- h-[30px] invert"src="./assets/images/pngwing.com.png">Kachow Down Delivery</h2>
-    </footer> 
-</article> 
+    
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="./assets/js/script.js"></script>
 </html>
