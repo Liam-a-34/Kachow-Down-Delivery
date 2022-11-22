@@ -4,7 +4,9 @@ module.exports = {
     "./*/*.html",
     "./index.html",
     "./veggy.html",
-    './signin.html'
+    './signin.html',
+    './italy.html',
+    './seafood.html'
   ],
   theme: {
     fontFamily: {
