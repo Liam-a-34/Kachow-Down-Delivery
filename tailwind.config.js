@@ -8,7 +8,8 @@ module.exports = {
     './italy.html',
     './seafood.html',
     './cart.html',
-    './main.html'
+    './main.html',
+    './pizza.html'
   ],
   theme: {
     fontFamily: {
