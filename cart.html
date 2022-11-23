@@ -14,21 +14,29 @@
 </head>
 <body>
     <header class="fixed top-0 w-full h-[100px] bg-header-grey border-b-2 border-off-white z-[1] text-center">
-        <a href="javascript:history.back()"><img class="invert w-[60px] absolute top-[30px] left-[30px]" src="./assets/images/pngwing.com.png"></a>
+        <a href="javascript:history.back()">
+            <img class="invert w-[60px] absolute top-[33px] left-[30px]" src="./assets/images/pngwing.com.png"></a>
         <h1 class="text-white text-6xl font-Bree mt-4">Shopping Cart</h1>
     </header>
 
-    <article class="w-[80%] border-[1px] border-black h-[80%] w-[60vw] mx-auto mt-[15vh] rounded-3xl shadow-info-grey shadow-lg p-[2%]">
-        <section id="cartItems">
-            <div class="flex relative border-b-2 border-info-grey p-5 ">
-                <img class="w-[175px] h-[125px] rounded-lg" src="https://ik.imagekit.io/liamallen34/Kachow_Images/shutterstock_271030664.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668723789056">
-                <h4 class="text-[30px] ml-5 mt-3 font-Bree text-header-grey">Chicken Salad</h4>
-                <p class="absolute top-[90px] left-[220px] text-[20px] font-Roboto">$18.99</p>
-                <button class="material-symbols-outlined absolute right-[10%] top-[65px] border-[2px] border-black h-[40px] w-[40px] rounded-full">delete</button>
+    <article id="cartArticle" class="relative border-[1px] border-black h-[70%] w-[60vw] mx-auto mt-[15vh] rounded-3xl shadow-info-grey shadow-lg p-[2%]">
+        <section id="cartItems" class="pb-[75px]">
+            <div class="h-[70vh] relative">
+                <h3 class="absolute top-[100px] text-gray-400 text-6xl text-center font-Bree w-2/3 mx-[15%]">Your Cart Is Currently Empty</h3>
+                <h3 class="absolute top-[300px] text-gray-400 text-6xl text-center font-Bree w-2/3 mx-[15%]">Guess You're Not Hungry :</h3>
             </div>
-                 
+            <div id="" class="relative flex border-b-2 border-info-grey p-5 ">
+                <img class="w-[175px] h-[125px] rounded-lg" src="https://ik.imagekit.io/liamallen34/Kachow_Images/pexels-arina-krasnikova-6316538.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668619837677">
+                <h4 class="text-[30px] ml-5 mt-3 font-Bree text-header-grey"></h4>
+                <p class="absolute top-[90px] left-[220px] text-[20px] font-Roboto"></p>
+                <button class="absolute right-[10%] top-[65px] border-[2px] border-black h-[40px] w-[40px] rounded-full deleteBtn material-symbols-outlined ">delete</button>
+            </div>
         </section>
+        <h2 id="foodTotal" class="absolute text-5xl bottom-[35px] left-[10%] font-Bree"></h2>
     </article>
+
+    <button id="checkoutBtn" class="absolute left-[83%] top-[230px] text-4xl bg-header-grey pt-2 pb-3 px-[50px] rounded-3xl text-white hover:bg-info-grey">Checkout</button>
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./assets/js/cart.js"></script>
 </body>
