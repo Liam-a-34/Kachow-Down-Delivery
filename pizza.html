@@ -6,72 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,1,0"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,1,0"/>
     <link rel="stylesheet" href="./dist/output.css" />
     <title>Papa Perry's Pizza</title>
   </head>
   <body>
-    <header
-      class="fixed flex top-0 w-full h-[75px] bg-header-grey border-b-2 border-off-white z-[1]"
-    >
-      <a href="./main.html"
-        ><h1
-          class="font-Bree italic mt-[15px] mr-[75px] ml-[55px] text-white text-4xl"
-        >
-          <img
-            class="h-5 invert absolute top-[26px] left-5"
-            src="./assets/images/pngwing.com.png"
-          />Kachow Down Delivery
-        </h1></a
-      >
-      <a
-        class="address font-Roboto text-[18px] mt-7 text-white hover:cursor-pointer"
-        >Address<span class="relative left-[5px] bottom-[6px]">&#8964;</span></a
-      >
-      <button
-        class="absolute right-[100px] top-5 h-[35px] w-[80px] bg-white rounded-[30px] border-none"
-      >
+    <header class="fixed flex top-0 w-full h-[75px] bg-header-grey border-b-2 border-off-white z-[1]">
+      <a href="./main.html">
+        <h1 class="font-Bree italic mt-[15px] mr-[75px] ml-[55px] text-white text-4xl">
+          <img class="h-5 invert absolute top-[26px] left-5" src="./assets/images/pngwing.com.png"/>
+          Kachow Down Delivery
+        </h1>
+      </a>
+      <a class="address font-Roboto text-[18px] mt-7 text-white hover:cursor-pointer">
+        Address<span class="relative left-[5px] bottom-[6px]">&#8964;</span>
+      </a>
+      <button class="absolute right-[100px] top-5 h-[35px] w-[80px] bg-white rounded-[30px] border-none">
         <span class="material-symbols-outlined relative top-0.5">
           shopping_cart
         </span>
       </button>
     </header>
 
-    <section
-      class="inline-block w-[80%] mt-[100px] mr-[10%] ml-[10%] relative justify-center items-center"
-    >
-      <img
-        class="w-[80%] mr-[10%] ml-[10%] h-[650px] rounded-[18px] shadow-info-grey shadow-lg"
-        src="https://ik.imagekit.io/tsoc7yrwg/Pizza/pizza_image.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669084724766"
-      />
-      <div
-        class="inline-block relative top-[-118px] h-[100px] pt-[15px] pr-[15px] pl-[15px] bg-white rounded-xl ml-[11%] font-Roboto"
-      >
+    <section class="inline-block w-[80%] mt-[100px] mr-[10%] ml-[10%] relative justify-center items-center">
+      <img class="w-[80%] mr-[10%] ml-[10%] h-[650px] rounded-[18px] shadow-info-grey shadow-lg" src="https://ik.imagekit.io/tsoc7yrwg/Pizza/pizza_image.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669084724766"/>
+      <div class="inline-block relative top-[-118px] h-[100px] pt-[15px] pr-[15px] pl-[15px] bg-white rounded-xl ml-[11%] font-Roboto">
         <h2 class="text-[200%] font-semibold relative top-[-4px]">
           Papa Perry's Pizza 
         </h2>
         <p class="font-bold text-info-grey relative left-[-5px]">
           Pizza, Pasta, and more|2.0 mi|$$$ | 4.8
-          <img
-            class="w-3 h-3 absolute bottom-[7px] right-[-13px]"
-            src="./assets/images/star-grey-th.png"
-          />
+          <img class="w-3 h-3 absolute bottom-[7px] right-[-13px]" src="./assets/images/star-grey-th.png"/>
         </p>
       </div>
-      <div
-        class="inline-block relative h-[100px] top-[-118px] font-Roboto bg-white text-center pt-[10px] pr-[30px] pl-[30px] pb-[15px] ml-[5px] rounded-xl"
-      >
+      <div class="inline-block relative h-[100px] top-[-118px] font-Roboto bg-white text-center pt-[10px] pr-[30px] pl-[30px] pb-[15px] ml-[5px] rounded-xl">
         <h6 id="v-open-status" class="text-[200%] mb-[5px] font-semibold">
           Open
         </h6>
@@ -79,16 +49,11 @@
       </div>
     </section>
 
-    <h3
-      id="top-ratings-header"
-      class="relative top-[-70px] font-Bree text-[40px] ml-[14%] underline"
-    >
+    <h3 id="top-ratings-header" class="relative top-[-70px] font-Bree text-[40px] ml-[14%] underline">
       Top Ratings
     </h3>
     <section class="w-[80%] mx-[10%] flex justify-evenly relative top-[-50px]">
-      <div
-        class="w-[30%] h-[150px] border-info-grey border-2 rounded-xl p-[10px] font-Roboto overflow-hidden shadow-info-grey shadow-md"
-      >
+      <div class="w-[30%] h-[150px] border-info-grey border-2 rounded-xl p-[10px] font-Roboto overflow-hidden shadow-info-grey shadow-md">
         <h5 class="text-[22px] font-Bree">Calvin P.</h5>
         <h6 class="mb-[5px] text-[14px]">
           <span class="material-symbols-outlined"> grade </span>
@@ -103,9 +68,7 @@
           made-from-scratch.
         </p>
       </div>
-      <div
-        class="w-[30%] h-[150px] border-info-grey border-2 rounded-xl p-[10px] font-Roboto overflow-hidden shadow-info-grey shadow-md"
-      >
+      <div class="w-[30%] h-[150px] border-info-grey border-2 rounded-xl p-[10px] font-Roboto overflow-hidden shadow-info-grey shadow-md">
         <h5 class="text-[22px] font-Bree">Marylne U.</h5>
         <h6>
           <span class="material-symbols-outlined"> grade </span>
@@ -118,9 +81,7 @@
           The pizza was very warm and delicious thin crust was very delicious.
         </p>
       </div>
-      <div
-        class="w-[30%] h-[150px] border-info-grey border-2 rounded-xl p-[10px] font-Roboto overflow-hidden shadow-info-grey shadow-md"
-      >
+      <div class="w-[30%] h-[150px] border-info-grey border-2 rounded-xl p-[10px] font-Roboto overflow-hidden shadow-info-grey shadow-md">
         <h5 class="text-[22px] font-Bree">Amani K.</h5>
         <h6>
           <span class="material-symbols-outlined"> grade </span>
@@ -140,76 +101,52 @@
       </h3>
       <article id="foods" class="flex flex-wrap justify-evenly mx-[10%] shrink">
         <div class="w-[450px] h-[400px] mx-auto rounded-xl">
-          <img
-            class="w-[450px] h-[300px] shadow-info-grey shadow-lg rounded-xl hover:cursor-pointer transition transform hover:scale-110"
-            src="https://ik.imagekit.io/tsoc7yrwg/Pizza/Pasta_Primavera.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1669084179615"
-          />
+          <img class="w-[450px] h-[300px] shadow-info-grey shadow-lg rounded-xl hover:cursor-pointer transition transform hover:scale-110" src="https://ik.imagekit.io/tsoc7yrwg/Pizza/Pasta_Primavera.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1669084179615"/>
           <h4 class="text-[25px] relative top-4 left-2 font-Bree">
             Pasta Primavera
           </h4>
           <p class="relative top-[10px] left-2 text-[20px]">$17</p>
         </div>
         <div class="w-[450px] h-[400px] mx-auto rounded-xl">
-          <img
-            class="w-[450px] h-[300px] shadow-info-grey shadow-lg rounded-xl hover:cursor-pointer transition transform hover:scale-110"
-            src="https://ik.imagekit.io/tsoc7yrwg/Pizza/Chicken_Carbonara.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669084180618"
-          />
+          <img class="w-[450px] h-[300px] shadow-info-grey shadow-lg rounded-xl hover:cursor-pointer transition transform hover:scale-110" src="https://ik.imagekit.io/tsoc7yrwg/Pizza/Chicken_Carbonara.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669084180618"/>
           <h4 class="text-[25px] relative top-4 left-2 font-Bree">
             Chicken Carbonara
           </h4>
           <p class="relative top-[10px] left-2 text-[20px]">$22</p>
         </div>
         <div class="w-[450px] h-[400px] mx-auto rounded-xl">
-          <img
-            class="w-[450px] h-[300px] shadow-info-grey shadow-lg rounded-xl hover:cursor-pointer transition transform hover:scale-110"
-            src="https://ik.imagekit.io/tsoc7yrwg/Pizza/Fiery_Buffalo_Chicken_Pizza.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1669084179401"
-          />
+          <img class="w-[450px] h-[300px] shadow-info-grey shadow-lg rounded-xl hover:cursor-pointer transition transform hover:scale-110" src="https://ik.imagekit.io/tsoc7yrwg/Pizza/Fiery_Buffalo_Chicken_Pizza.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1669084179401"/>
           <h4 class="text-[25px] relative top-4 left-2 font-Bree">
             Fiery Buffalo Chicken Pizza
           </h4>
           <p class="relative top-[10px] left-2 text-[20px]">$16.99, 8 slices</p>
         </div>
         <div class="w-[450px] h-[400px] mx-auto rounded-xl">
-          <img
-            class="w-[450px] h-[300px] shadow-info-grey shadow-lg rounded-xl hover:cursor-pointer transition transform hover:scale-110"
-            src="https://ik.imagekit.io/tsoc7yrwg/Pizza/Philly_Cheese_Steak_Pizza.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669085001934"
-          />
+          <img class="w-[450px] h-[300px] shadow-info-grey shadow-lg rounded-xl hover:cursor-pointer transition transform hover:scale-110" src="https://ik.imagekit.io/tsoc7yrwg/Pizza/Philly_Cheese_Steak_Pizza.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669085001934"/>
           <h4 class="text-[25px] relative top-4 left-2 font-Bree">
             Philly Cheese Steak Pizza
           </h4>
           <p class="relative top-[10px] left-2 text-[20px]">$18, 8 slices</p>
         </div>
         <div class="w-[450px] h-[400px] mx-auto rounded-xl">
-          <img
-            class="w-[450px] h-[300px] shadow-info-grey shadow-lg rounded-xl hover:cursor-pointer transition transform hover:scale-110"
-            src="https://ik.imagekit.io/tsoc7yrwg/Pizza/Memphis_BBQ_Chicken_Pizza.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669084180302"
-          />
+          <img class="w-[450px] h-[300px] shadow-info-grey shadow-lg rounded-xl hover:cursor-pointer transition transform hover:scale-110" src="https://ik.imagekit.io/tsoc7yrwg/Pizza/Memphis_BBQ_Chicken_Pizza.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669084180302"/>
           <h4 class="text-[25px] relative top-4 left-2 font-Bree">
             Memphis BBQ Chicken Pizza
           </h4>
           <p class="relative top-[10px] left-2 text-[20px]">$21 ,8 slices</p>
         </div>
         <div class="w-[450px] h-[400px] mx-auto rounded-xl">
-          <img
-            class="w-[450px] h-[300px] shadow-info-grey shadow-lg rounded-xl hover:cursor-pointer transition transform hover:scale-110"
-            src="https://ik.imagekit.io/tsoc7yrwg/Pizza/Cali_Chicken_Bacon_Ranch_Pizza.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669084179175"
-          />
+          <img class="w-[450px] h-[300px] shadow-info-grey shadow-lg rounded-xl hover:cursor-pointer transition transform hover:scale-110" src="https://ik.imagekit.io/tsoc7yrwg/Pizza/Cali_Chicken_Bacon_Ranch_Pizza.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669084179175"/>
           <h4 class="text-[25px] relative top-4 left-2 font-Bree">
             Cali Chicken Bacon Ranch Pizza
           </h4>
           <p class="relative top-[10px] left-2 text-[20px]">$20,8 slices</p>
         </div>
       </article>
-      <footer
-        class="absolute text-center h-[200px] mt-[75px] font-Bree w-full bg-[#1f1d1d] text-5xl"
-      >
-        <h2
-          class="inline-block absolute left-[37%] top-[35%] text-white italic"
-        >
-          <img
-            class="absolute left-[-50px] bottom-2 h-[30px] invert"
-            src="./assets/images/pngwing.com.png"
-          />Kachow Down Delivery
+      <footer class="absolute text-center h-[200px] mt-[75px] font-Bree w-full bg-[#1f1d1d] text-5xl">
+        <h2 class="inline-block absolute left-[37%] top-[35%] text-white italic">
+          <img class="absolute left-[-50px] bottom-2 h-[30px] invert" src="./assets/images/pngwing.com.png"/>
+          Kachow Down Delivery
         </h2>
       </footer>
     </section>
