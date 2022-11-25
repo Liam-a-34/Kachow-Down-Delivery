@@ -19,7 +19,7 @@
         <h1 class="text-white text-6xl font-Bree mt-4">Checkout</h1>
     </header>
 
-        <article id="cartArticle" class="relative text-center border-[1px] border-black h-[110vh] w-[60vw] mx-auto mt-[15vh] mb-[200px] rounded-3xl shadow-info-grey shadow-lg p-[2%]">
+        <article id="cartArticle" class="relative text-center border-[1px] border-black h-[110vh] w-[60vw] mx-auto mt-[15vh] mb-[200px] rounded-3xl shadow-info-grey shadow-lg p-[2%] max-[1700px]:h-[120vh] max-[1150px]:h-[115vh]">
             <div id="addressForm" class="inline-block border-b-2 border-black pb-[20px]">
                 <h4 class="text-[30px] font-Bree">Name</h4>
                 <input id="field-1" placeholder="First" class="w-[44%] mr-[1%] h-[50px] rounded-lg border-2 border-black pl-3 text-[25px]">
@@ -287,8 +287,8 @@
                     <label for="saveCheck" class=" w-1/3 font-Bree text-[30px]">Save All Information?</label>
                     <input id="saveCheck" name="saveCheck" type="checkbox" class=" w-4 h-4 border-black mt-3">
                 </div>
-                <h2 id="foodTotal" class="absolute text-5xl bottom-[35px] left-[10%] font-Bree">Total: 0</h2>
-                <button id="buyBtn" class="text-4xl text-white bg-header-grey py-3 px-[50px] absolute right-[100px] bottom-[30px] rounded-full">Checkout</button>
+                <h2 id="foodTotal" class="absolute text-5xl bottom-[35px] left-[10%] font-Bree max-[1150px]:text-4xl">Total: 0</h2>
+                <button id="buyBtn" class="text-4xl text-white bg-header-grey py-3 px-[50px] absolute right-[100px] bottom-[30px] rounded-full max-[1150px]:text-[20px] max-[1150px]:py-2 max-[1150px]:right-[50px]">Checkout</button>
         </article>
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="./assets/js/checkout.js"></script>
