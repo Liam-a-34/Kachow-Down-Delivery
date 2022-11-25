@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="w-full m-0 p-0">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,16 +12,13 @@
     <link rel="stylesheet" href="./dist/output.css" />
     <title>Captain Cliffs Fresh Seafoods</title>
   </head>
-  <body>
+  <body  class="w-full m-0 p-0 relative">
     <header class="fixed flex top-0 w-full h-[75px] bg-header-grey border-b-2 border-off-white z-[1]">
       <a href="./main.html">
         <h1 class="font-Bree italic mt-[15px] mr-[75px] ml-[55px] text-white text-4xl">
           <img class="h-5 invert absolute top-[26px] left-5" src="./assets/images/pngwing.com.png"/>
           Kachow Down Delivery
         </h1>
-      </a>
-      <a class="address font-Roboto text-[18px] mt-7 text-white hover:cursor-pointer">
-        Address<span class="relative left-[5px] bottom-[6px]">&#8964;</span>
       </a>
       <button class="cartBtn absolute right-[100px] top-5 h-[35px] w-[80px] bg-white rounded-[30px] border-none">
         <span class="material-symbols-outlined relative top-0.5">
@@ -31,7 +28,7 @@
     </header>
 
     <section class="inline-block w-[80%] mt-[100px] mr-[10%] ml-[10%] relative justify-center items-center">
-      <img class="w-[80%] mr-[10%] ml-[10%] h-[650px] rounded-[18px] shadow-info-grey shadow-lg" src="https://ik.imagekit.io/tsoc7yrwg/seafood-platter-taste-156004-2.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668739358441"/>
+      <img class="w-[80%] mr-[10%] ml-[10%] h-[650px] rounded-[18px] shadow-info-grey shadow-lg max-[1100px]:h-[400px]" src="https://ik.imagekit.io/tsoc7yrwg/seafood-platter-taste-156004-2.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668739358441"/>
       <div class="inline-block relative top-[-118px] h-[100px] pt-[15px] pr-[15px] pl-[15px] bg-white rounded-xl ml-[11%] font-Roboto">
         <h2 class="text-[200%] font-semibold relative top-[-4px]">
           Captain Cliffs Fresh Seafoods
@@ -54,31 +51,31 @@
     </h3>
     <section class="w-[80%] mx-[10%] flex justify-evenly relative top-[-50px]">
       <div class="w-[30%] h-[150px] border-info-grey border-2 rounded-xl p-[10px] font-Roboto overflow-hidden shadow-info-grey shadow-md">
-        <h5 class="text-[22px] font-Bree">Calvin P.</h5>
-        <h6 class="mb-[5px] text-[14px]">
+        <h5 class="text-[22px] font-Bree max-[1000px]:text-[17px]">Calvin P.</h5>
+        <h6>
           <span class="material-symbols-outlined"> grade </span>
           <span class="material-symbols-outlined"> grade </span>
           <span class="material-symbols-outlined"> grade </span>
           <span class="material-symbols-outlined"> grade </span>
           <span class="material-symbols-outlined"> grade </span>
         </h6>
-        <p>Captain Cliffs Fresh Seafoods. Five stars.</p>
+        <p  class="max-[1000px]:text-[12px]">Captain Cliffs Fresh Seafoods. Five stars.</p>
       </div>
       <div class="w-[30%] h-[150px] border-info-grey border-2 rounded-xl p-[10px] font-Roboto overflow-hidden shadow-info-grey shadow-md">
-        <h5 class="text-[22px] font-Bree">Mauren K</h5>
+        <h5 class="text-[22px] font-Bree max-[1000px]:text-[17px]">Mauren K</h5>
         <h6>
           <span class="material-symbols-outlined"> grade </span>
           <span class="material-symbols-outlined"> grade </span>
           <span class="material-symbols-outlined"> grade </span>
           <span class="material-symbols-outlined"> grade </span>
         </h6>
-        <p>
+        <p  class="max-[1000px]:text-[12px]">
           The food was delicious and well priced. I especially enjoyed the
           Classic Filet Oscar.
         </p>
       </div>
       <div class="w-[30%] h-[150px] border-info-grey border-2 rounded-xl p-[10px] font-Roboto overflow-hidden shadow-info-grey shadow-md">
-        <h5 class="text-[22px] font-Bree">Daniel I A.</h5>
+        <h5 class="text-[22px] font-Bree max-[1000px]:text-[17px]">Daniel I A.</h5>
         <h6>
           <span class="material-symbols-outlined"> grade </span>
           <span class="material-symbols-outlined"> grade </span>
@@ -86,14 +83,14 @@
           <span class="material-symbols-outlined"> grade </span>
           <span class="material-symbols-outlined"> grade </span>
         </h6>
-        <p>
+        <p  class="max-[1000px]:text-[12px]">
           Some of the absolute best seafood we have had since not living in a
           port side city. Keep up the good work!
         </p>
       </div>
     </section>
 
-    <section class="available-items">
+    <section class="available-items pb-[250px]">
       <h3 class="relative top-[-30px] font-Bree text-[40px] ml-[14%] underline">
         Available Items
       </h3>
@@ -145,12 +142,13 @@
           <button class="addBtn relative left-[360px] bottom-[115px] bg-white px-4 py-1 rounded-3xl border-2 border-header-grey font-Bree">Add</button>
         </div>
       </article>
-      <footer class="absolute text-center h-[200px] mt-[75px] font-Bree w-full bg-[#1f1d1d] text-5xl">
-        <h2 class="inline-block absolute left-[37%] top-[35%] text-white italic">
-          <img class="absolute left-[-50px] bottom-2 h-[30px] invert" src="./assets/images/pngwing.com.png">
-          Kachow Down Delivery
-        </h2>
+      <footer class="absolute bottom-0 text-center mt-[200px] h-[200px] font-Bree w-full bg-[#1f1d1d] text-5xl">
+        <div class="absolute left-1/2 perfect-center top-[100px] flex">
+            <img class="relative top-[10px] bottom-2 h-[30px] invert max-[1100px]:h-[20px] max-[800px]:h-[15px]" src="./assets/images/pngwing.com.png">
+            <h2 class="text-white italic max-[1100px]:text-4xl max-[800px]:text-3xl">Kachow Down Delivery</h2>
+        </div>
     </footer>
+
     </section>
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

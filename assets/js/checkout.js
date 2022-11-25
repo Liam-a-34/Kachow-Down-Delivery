@@ -17,6 +17,16 @@ $("#buyBtn").on("click", function(){
     if($("#saveCheck").prop("checked")) { 
         for(var i = 1; i < 13; i++){
             localStorage.setItem(`field-${i}`, $(`#field-${i}`).val())
-        }
+
+            localStorage.clear("cart")
+            localStorage.clear("totalFoodPrice")
+
+            location.assign("./thanks.html")
+        } 
+    } else{
+        localStorage.clear("cart")
+            localStorage.clear("totalFoodPrice")
+
+            location.assign("./thanks.html")
     }
 })

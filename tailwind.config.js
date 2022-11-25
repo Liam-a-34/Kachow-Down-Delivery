@@ -11,7 +11,9 @@ module.exports = {
     './main.html',
     './pizza.html',
     './burger.html',
-    './checkout.html'
+    './checkout.html',
+    './thanks.html',
+    './southern.html'
   ],
   theme: {
     fontFamily: {
