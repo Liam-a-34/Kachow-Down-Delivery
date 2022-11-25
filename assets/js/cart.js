@@ -27,6 +27,8 @@ if (localStorage.getItem("cart") != null){
 
             totalPrice += itemPrice
 
+            localStorage.setItem("foodTotalPrice", JSON.stringify(totalPrice))
+
         count += 1;
 
             let foodImageEl = `<img class="w-[175px] h-[125px] rounded-lg" src="${parsedArray[count]}">`
@@ -42,10 +44,9 @@ if (localStorage.getItem("cart") != null){
 
         $("#foodTotal").html(`Total: $${totalPrice.toFixed(2)}`)
 
-        const checkoutBtn = 
-        `
+        $("#checkoutBtn").html("Checkout")
 
-        `
+
     }
 } else {
 
@@ -62,6 +63,8 @@ if (localStorage.getItem("cart") != null){
     $("#cartItems").append(blankCart)
 
     $("#foodTotal").html("")
+
+    $("#checkoutBtn").html("")
  }
 
 $(".deleteBtn").on("click", function(){
@@ -86,10 +89,14 @@ $(".deleteBtn").on("click", function(){
 
             totalPrice -= parseFloat(foodSubtract)
 
+            localStorage.setItem("foodTotalPrice", JSON.stringify(totalPrice))
+
+
     $("#foodTotal").html(`Total: $${totalPrice.toFixed(2)}`)
 
         if(totalPrice.toFixed(2) == 0.00){
             $("#foodTotal").html("")
+            $("#checkoutBtn").html("")
         }
 
         parsedArray.pop(foodItemIndex)
@@ -129,6 +136,7 @@ $(".deleteBtn").on("click", function(){
     }
 })
 
-$(".checkoutBtn").on("click", function(){
+$("#checkoutBtn").on("click", function(){
     location.assign("./checkout.html")
 })
+

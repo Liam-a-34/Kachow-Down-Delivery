@@ -10,7 +10,8 @@ module.exports = {
     './cart.html',
     './main.html',
     './pizza.html',
-    './burger.html'
+    './burger.html',
+    './checkout.html'
   ],
   theme: {
     fontFamily: {
