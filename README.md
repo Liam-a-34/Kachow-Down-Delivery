@@ -72,10 +72,6 @@ These are all the unfinished, or optional items that could be done in the future
 
 * Expand restaurant options, and food selections.
 
-* Make the site mobile compatible.
-
-* Add driver communication options.
-
 ## Credits
 
 * Stock Images: Shutterstock | https://www.shutterstock.com/
