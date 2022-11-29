@@ -26,7 +26,8 @@ $("#buyBtn").on("click", function(){
 
     } else{
         localStorage.removeItem("cart")
-        localStorage.removeItem("totalFoodPrice")
+        localStorage.removeItem("foodTotalPrice")
+        $("#foodTotal").html("Total: $0")
 
         location.assign("./thanks.html")
     }
