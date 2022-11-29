@@ -20,7 +20,7 @@ $("#buyBtn").on("click", function(){
         } //If the save data check box is checked it will save all the fields to local storage
         setTimeout(function(){
             localStorage.removeItem("cart")
-            localStorage.removeItem("totalFoodPrice")
+            localStorage.removeItem("foodTotalPrice")
             location.assign("./thanks.html") 
         }, 1000)
 
