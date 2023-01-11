@@ -1,59 +1,60 @@
 
-$("#email-address").on("input", function(){
+// $("#email-address").on("input", function(){
 
-    let emailInput = $("#email-address").val()
+//     let emailInput = $("#email-address").val()
 
-    var myHeaders = new Headers();
-    myHeaders.append("apikey", "wFLZpRtpFqmOobP63e3acH5w9aZ5UY7P");
+//     var myHeaders = new Headers();
+//     myHeaders.append("apikey", "wFLZpRtpFqmOobP63e3acH5w9aZ5UY7P");
 
-    var requestOptions = {
-    method: 'GET',
-    redirect: 'follow',
-    headers: myHeaders
-    };
-//Checks to see if the email is valid on every input
-fetch(`https://api.apilayer.com/email_verification/check?email=${emailInput}`, requestOptions)
-  .then(function(response){
-    return response.json()
-  })
-  .then(function(data){
-    console.log(data)
-    let emailBool = data.format_valid
-    localStorage.setItem("email", emailBool);
-  })
-})
+//     var requestOptions = {
+//     method: 'GET',
+//     redirect: 'follow',
+//     headers: myHeaders
+//     };
+// //Checks to see if the email is valid on every input
+// fetch(`https://api.apilayer.com/email_verification/check?email=${emailInput}`, requestOptions)
+//   .then(function(response){
+//     return response.json()
+//   })
+//   .then(function(data){
+//     console.log(data)
+//     let emailBool = data.format_valid
+//     localStorage.setItem("email", emailBool);
+//   })
+// })
 
-$("#phone").on("input", function(){
+// $("#phone").on("input", function(){
 
-    let phoneInput = $("#phone").val()
+//     let phoneInput = $("#phone").val()
 
-    var myHeaders = new Headers();
-    myHeaders.append("apikey", "wFLZpRtpFqmOobP63e3acH5w9aZ5UY7P");
+//     var myHeaders = new Headers();
+//     myHeaders.append("apikey", "wFLZpRtpFqmOobP63e3acH5w9aZ5UY7P");
 
-var requestOptions = {
-  method: 'GET',
-  redirect: 'follow',
-  headers: myHeaders
-};
-//Checks to see if the phone number is valid on ever input
-fetch(`https://api.apilayer.com/number_verification/validate?number=${phoneInput}`, requestOptions)
-  .then(function (response) {
-    return response.json()
-  })
-  .then(function (data){
-    console.log(data)
-    let phoneBool = data.valid
-    localStorage.setItem("phone", phoneBool)
-  })
+// var requestOptions = {
+//   method: 'GET',
+//   redirect: 'follow',
+//   headers: myHeaders
+// };
+// //Checks to see if the phone number is valid on ever input
+// fetch(`https://api.apilayer.com/number_verification/validate?number=${phoneInput}`, requestOptions)
+//   .then(function (response) {
+//     return response.json()
+//   })
+//   .then(function (data){
+//     console.log(data)
+//     let phoneBool = data.valid
+//     localStorage.setItem("phone", phoneBool)
+//   })
 
-})
+// })
 
 let cartArray = [];
 //If both fields have valid inputs when you click the sign in, you will be brought to the main page
 $("#signInBtn").on("click", function(){
-    if(localStorage.getItem("email") == "true" && localStorage.getItem("phone") == "true"){
+    // if(localStorage.getItem("email") == "true" && localStorage.getItem("phone") == "true"){
+    // location.assign("./main.html")
+    // }
     location.assign("./main.html")
-    }
 })
 
 //Brings you to the cart when you click the cart button
